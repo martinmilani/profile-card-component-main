@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body
+    class="flex justify-center items-center font-body bg-darkCyan h-screen p-6 min-w-min"
+    style="
+      background-image: url('/public/images/bg-pattern-top.svg'),
+        url('/public/images/bg-pattern-bottom.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    "
+  >
+    <!-- contetn wraper -->
+    <div class="flex-1 relative max-w-sm">
+      <div class="bg-white rounded-2xl overflow-hidden relative z-30">
+        <header class="flex justify-center bg-card-pattern h-36">
+          <img
+            src="\public\images\image-victor.jpg"
+            alt="Victor Crest"
+            class="rounded-full border-solid border-8 border-white absolute top-24"
+          />
+        </header>
+
+        <main
+          class="p-4 mt-12 text-center border-solid border-b border-opacity-25 border-grayishBlue"
+        >
+          <p class="mt-4">
+            <span class="font-bold text-lg tracking-wide">Victor Crest </span
+            ><span class="text-grayishBlue"> 26</span>
+          </p>
+          <p class="mt-1 text-sm text-grayishBlue">London</p>
+        </main>
+
+        <footer class="p-4 pb-6 mt-2">
+          <ul class="flex justify-around">
+            <li class="text-center tracking-wide">
+              <h3 class="font-bold">80K</h3>
+              <p class="text-xs text-grayishBlue">Followers</p>
+            </li>
+
+            <li class="text-center tracking-wide">
+              <h3 class="font-bold">803K</h3>
+              <p class="text-xs text-grayishBlue">Likes</p>
+            </li>
+            <li class="text-center tracking-wide">
+              <h3 class="font-bold">1.4K</h3>
+              <p class="text-xs text-grayishBlue">Photos</p>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <div class="attribution absolute bottom-0 text-center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Martin Milani</a>.
+    </div>
+  </body>
+</html>
